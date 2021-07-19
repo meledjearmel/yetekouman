@@ -1,0 +1,2 @@
+let httpRequest = new XMLHtppRequest()
+

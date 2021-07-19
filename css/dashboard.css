@@ -1,0 +1,416 @@
+.dash-body {
+	width: 90%;
+	height: 100%;
+	min-height: 100px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.dash-slide-board {
+	position: relative;
+	width: calc(100% - 100px);
+	height: 350px;
+	background: #999;
+	margin: 20px auto;
+	display: flex;
+}
+
+.dash-user-dash {
+	position: absolute;
+	left: 35px;
+	bottom: 20px;
+	display: flex;
+}
+
+.dash-user-ident {
+	display: flex;
+	user-select: none;
+}
+
+.dash-circle-init {
+	width: 95px;
+	height: 95px;
+	margin: 10px;
+	background: #fff;
+	border: 1.5px solid blueviolet;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dash-init {
+	color: blueviolet;
+	font-size: 2.8em;
+}
+
+.dash-user-inf {
+	height: 95px;
+	margin: 10px 10px 10px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+.dash-user-name {
+	font-family: 'Lambola';
+	font-size: 1.8em;
+}
+
+.dash-user-contact {
+	font-size: 1.0em;
+}
+
+.dash-user-contact i {
+	transform: rotateY(180deg);
+	color: blueviolet;
+}
+
+.dash-page-content {
+	position: relative;
+	width: calc(100% - 140px);
+	padding: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.dash-section-main {
+	position: relative;
+	width: calc(100% - 550px);
+	min-height: 200px;
+}
+
+.dash-main-card-info {
+	width: calc(100% - 23px);
+	min-height: 100px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background: #fff;
+	border: 1.5px solid blueviolet;
+	transition: box-shadow .5s;
+}
+
+.dash-main-card-info:hover {
+	box-shadow: 0px 0px 5px 3px blueviolet;
+	transition: box-shadow .3s;
+}
+
+.dash-main-card-head {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	color: #000;
+	user-select: none;
+}
+
+.dash-main-circle-init {
+	width: 45px;
+	height: 45px;
+	background: #fff;
+	border: 1.5px solid blueviolet;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dash-main-init {
+	color: blueviolet;
+	font-size: 1.7em;
+}
+
+.dash-main-name {
+	width: calc(100% - 183px);
+	padding-left: 15px;
+}
+
+.dash-main-name span {
+	font-size: 1.35em;
+}
+
+.dash-main-hour {
+	width: 120px;
+}
+
+.dash-main-hour span {
+	font-family: 'Champagne & Limousines';
+	font-size: 0.9em;
+}
+
+.dash-main-card-body div{
+	margin-left: 24px;
+	padding: 0 15px;
+	border-left: 1.5px solid blueviolet;
+	font-family: 'Champagne & Limousines';
+	font-size: 1.1em;
+	letter-spacing: .5px;
+	color: #000;
+}
+
+.dash-aside-members {
+	position: relative;
+	width: 260px;
+	max-height: 700px;
+	display: flex;
+	flex-direction: column;
+	padding: 21px 0 0 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.dash-member-title {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 21px;
+	font-size: 1.0em;
+	text-align: center;
+	background: blueviolet;
+}
+
+.dash-member-card {
+	width: calc(100% - 2px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-bottom: 1px solid blueviolet;
+	user-select: none;
+	background: #fff;
+	border-left: 1px solid blueviolet;
+	border-right: 1px solid blueviolet;
+}
+
+.dash-member-card > div {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.dash-card-circle-init {
+	width: 65px;
+	height: 65px;
+	margin: 2px 20px 2px 5px;
+	background: #fff;
+	border: 1.5px solid blueviolet;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dash-card-init {
+	color: blueviolet;
+	font-size: 1.7em;
+}
+
+.dash-member-inf {
+	height: 65px;
+	width: calc(100% - 100px);
+	margin: 7px 7px 7px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+.dash-member-name {
+	font-family: 'Lambola';
+	font-size: 1.1em;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.dash-member-contact {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+
+.dash-member-contact i[class="fa fa-envelope"] {
+	color: #02C8FF;
+	cursor: pointer;
+	font-size: 1.305em;
+}
+
+.dash-member-contact i[class="fa fa-phone"] {
+	color: rgb(10, 180, 32);
+	cursor: pointer;
+	font-size: 1.305em;
+}
+
+.dash-card-info-send {
+	width: 100%;
+	padding: 5px 0;
+	border-top: 1px solid blueviolet;
+}
+
+.dash-dnone {
+	display: none !important;
+}
+
+.dash-member-contact-view{
+	width: 100%;
+	color: #000;
+	display: flex;
+	justify-content: center;
+}
+
+.dash-member-contact-view span {
+	margin: auto;
+	display: block;
+}
+
+.dash-member-msg-send {
+	width: 100%;
+}
+
+.dash-member-msg-send > form {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.dash-member-msg-send > form input[type="text"] {
+	width: calc(100% - 65px);
+	height: 22px;
+	padding: 3px 6.5px;
+	border: 1px solid blueviolet;
+	border-radius: 4.5px;
+	outline: none;
+	box-shadow: none;
+}
+
+.dash-member-msg-send > form button {
+	height: 28px;
+	background: blueviolet !important;
+	cursor: pointer;
+}
+
+.dash-footer {
+	position: absolute;
+	width: calc(100% - 40px);
+	min-height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #02C8FF;
+	padding: 10px 20px;
+}
+
+.dash-footer-content {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 10px;
+}
+
+.dash-form-sugg {
+	width: 300px;
+}
+
+.dash-form-textarea {
+	width: 300px;
+	height: 110px;
+}
+
+.dash-form-textarea textarea {
+	width: calc(100% - 20px);
+	height: calc(100% - 40px);
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	resize: none;
+	font-family: 'Champagne & Limousines';
+	font-size: 1.0em;
+	letter-spacing: .5px;
+}
+
+.dash-form-submit {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.dash-form-submit button {
+	width: 110px;
+	height: 30px;
+	font-size: 1.0em;
+	cursor: pointer;
+}
+
+.dash-selected {
+	position: relative;
+	width: 180px;
+	height: 30px;
+}
+
+.dash-selected > i {
+	position: absolute;
+	color:#02C8FF;
+	top: 50%;
+	right: 5px;
+	transform: translate(0, -50%);
+}
+
+.dash-form-select{
+	width: 100% ;
+	height: 100%;
+	background: #fff;
+	border: none;
+	border-radius: 3px;
+	padding: auto 5px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	font-family: 'Nunito';
+	font-size: 0.9em;
+}
+
+.dash-form-select:focus {
+	outline: none;
+}
+
+.dash-footer-copy {
+	width: 100%;
+}
+
+.dash-footer-copy span {
+	display: block;
+	font-family: 'Champagne & Limousines';
+	color: #fff;
+	text-align: center;
+}
+
+.dash-hlink {
+	display: flex;
+	flex-direction: column;
+	width: px;
+}
+
+.dash-hlink a {
+	text-emphasis: none;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.0em;
+}
+
+.dash-hlink a span:hover {
+	text-decoration: underline;
+}
+
+.dash-hlink li {
+	list-style-type: none;
+	font-family: 'Nunito Regular';
+	font-weight: bold;
+}

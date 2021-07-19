@@ -1,0 +1,9 @@
+main{
+
+	width: 100vw;
+	height: 100vh;
+	background: #02C8FFFF;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+}

@@ -1,0 +1,262 @@
+.body{
+    height: calc(100vh - 80px);
+}
+
+.sugg-bloc-page{
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.sugg-champ{
+    border: 1px solid #02C8FFFF;
+    width: calc( 100% - 80px );
+    max-height: 100%;
+    overflow: auto;
+    margin: 30px auto;
+    border-bottom: none;
+    color: black;
+}
+
+.sugg-infos{
+    border-bottom: 1px solid #02C8FFFF;
+    height: 35px;
+    display: flex;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.sugg-infos:hover{
+    box-shadow: 1px 1px 20px 1px grey;
+    transition: box-shadow 0.3s;
+}
+
+.sugg-infos:active{
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.sugg-infos:active i{
+    color: #fff;
+}
+
+.sugg-letter i{
+    color: blueviolet;
+    font-size: 18px;
+}
+
+.sugg-letter{
+    height: 100%;
+    width: 35px;
+    justify-content: center;
+}
+
+.sugg-nom{
+    width: 230px;
+    padding-left: 5px;
+}
+
+.sugg-objet{
+    width: 230px;
+    padding-left: 5px;
+
+}
+
+.sugg-corps{
+    width: calc( 100% - 630px );
+    overflow: hidden;
+    word-wrap: none;
+    font-family: 'Champagne & Limousines';
+    font-weight: bolder;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+    padding-left: 5px;
+}
+
+.sugg-objet span, .sugg-corps span {
+    height: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+.sugg-corps span{line-height: 1;}
+
+.sugg-date{
+    justify-content: center;
+    font-family: 'Nunito Regular';
+    font-size: 13px;
+    width: 120px;
+    padding-left: 5px;
+}
+
+.sugg-element{
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+/***************************************************************************************************************************************************************************************/
+
+.sugg-msg-page {
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: #ebeaec85;
+    position: fixed;
+}
+
+.sugg-msg-bloc {
+     width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sugg-msg-view {
+    width: calc(100% - 400px);
+    max-height: calc(100% - 100px);
+    background-color: #fff;
+    box-shadow: 0 0 20px 5px grey;
+    position: relative;
+}
+
+.sugg-view-head {
+    width: calc(100% - 40px);
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sugg-view-body {
+    width: calc(100% - 70px);
+    height: calc(100% - 100px);
+    padding: 10px  35px 0;
+}
+
+.sugg-head-named {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.sugg-named-init {
+    width: 55px;
+    height: 55px;
+    border: 1.5px solid blueviolet;
+    border-radius: 50%;
+    background-color: #fff;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.sugg-named-init span {
+    font-size: 1.5em;
+    letter-spacing: 0.85px;
+    user-select: none;
+}
+
+.sugg-named-name {
+    font-size: 1.4em;
+    color: #000;
+    user-select: none;
+}
+
+.sugg-head-closed i {
+    color: blueviolet;
+    user-select: none;
+    cursor: pointer;
+}
+
+.sugg-body-obj-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sugg-body-date {
+    color: #000;
+}
+
+.sugg-obj-title {
+    color: blueviolet;
+    user-select: none;
+}
+
+.sugg-obj-content {
+    overflow: hidden;
+    word-wrap: none;
+    font-family: 'Champagne & Limousines';
+    font-weight: bolder;
+    font-size: 1.0em;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+.sugg-body-content {
+    margin: 30px auto;
+    padding: 0 30px;
+    border-left:  1.5px inset blueviolet;
+    color: #000;
+}
+
+.sugg-body-content span {
+    font-family: 'Champagne & Limousines';
+    font-size: 1.0em;
+    letter-spacing: 0.5px;
+}
+
+/*.sugg-answered {
+    width: calc(100% - 70px);
+    padding: 0 35px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sugg-answered span {
+    color: blueviolet;
+    font-family: 'Champagne & Limousines';
+    text-decoration: underline;
+    user-select: none;
+    cursor: pointer;
+}*/
+
+.sugg-dnone {
+    top: -100%;
+}
+
+.sugg-slide-down {
+    animation: slideDown .4s linear;
+}
+
+.sugg-slide-up {
+    animation: slideUp .47s linear;
+}
+
+.member-count {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color: #000;
+    font-weight: bolder;
+}
+
+/***********************************************************************************************************************************************************************************/
+
+@keyframes slideDown {
+    0%{top: -100%;}
+    100%{top: 0;}
+}
+
+@keyframes slideUp {
+    0%{top: 0;}
+    100%{top: -100%;}
+}

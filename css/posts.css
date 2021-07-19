@@ -1,0 +1,189 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 85px);
+}
+
+.post-container {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-lasted {
+	border: 1px solid black;
+	height: 100%;
+	width: 60%;
+	min-width: 465px;
+	margin: 0 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.post-lasted hr {
+	width: calc(100% - 2px);
+	margin: 0;
+}
+
+.post-card {
+	width: calc(100% - 10px);
+	height: 90px;
+	padding: 5px;
+	display: flex;
+}
+
+.post-card-container {
+	width: calc(100% - 110px);
+	height: 100%;
+}
+
+.post-card-head {
+	border-bottom: 2px solid black;
+	width: 100%;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.post-card-head div {
+	width: 50%;
+	height: 100%;
+	color: black;
+	display: flex;
+	align-items: center;
+}
+
+.post-card-type{
+	padding-left: 10px;
+	justify-content: flex-start;
+	font-size: 1.23em;
+}
+
+.post-card-time {
+	padding-right: 10px;
+	justify-content: flex-end;
+	font-size: 0.75em;
+	font-family: 'Nunito Regular';
+}
+
+.post-card-content {
+	padding: 5px 10px;
+	height: 45px;
+	font-family: 'Champagne & Limousines';
+	font-size: 0.9em;
+	color: black;
+	letter-spacing: 0.5px;
+	overflow: hidden;
+}
+
+.post-card-content span {
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	display: -webkit-box;
+}
+
+.post-card-action {
+	width: 110px;
+	height: 100%;
+	display: flex;
+}
+
+.post-card-action div {
+	width: 55px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	padding: 0 5px;
+}
+
+.post-card-action div a {
+	text-emphasis: none;
+	text-decoration: none;
+	color: #fff;
+}
+
+.post-card-action div span {
+	width: 35px;
+	height: 35px;
+	border: 2px outset transparent;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.post-card-action div span:active {
+	transform: scale(1.1);
+	transition: 0.1 transform;
+}
+
+.post-card-view {
+	background: #02c8ffff;
+}
+
+.post-card-del {
+	background: #e00a0a;
+}
+
+.post-new-edit {
+	height: 100%;
+	width: calc(40% - 25px);
+	min-width: 422px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.post-edition {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.post-content {
+	width: 402px;
+	height: 227px;
+	resize: none;
+	padding: 10px;
+	font-family: 'Champagne & Limousines';
+	font-size: 1.2em;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	margin-bottom: 10px;
+}
+
+.post-refer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.post-type {
+	width: calc(100% - 135px);
+	height: 35px;
+	border-radius: 4px;
+	background: transparent;
+	outline: none;
+	font-family: 'Nunito';
+	font-size: 1.05em;
+}
+
+.post-btn-publish {
+	width: 120px;
+	cursor: pointer;
+	font-size: .985em;
+	outline: none;
+}
+
